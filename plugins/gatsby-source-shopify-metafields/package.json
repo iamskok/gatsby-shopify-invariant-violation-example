@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-source-shopify-metafields",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "watch": "npm run build -- --watch"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4"
+  },
+  "dependencies": {
+    "babel-preset-gatsby-package": "^0.1.4",
+    "graphql-request": "^1.8.2"
+  }
+}
