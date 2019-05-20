@@ -12,6 +12,13 @@ const ProductList = () => {
               id
               title
               handle
+              metafields {
+              	namespace
+              	key
+              	value
+              	valueType
+              	description
+              }
             }
           }
         }
