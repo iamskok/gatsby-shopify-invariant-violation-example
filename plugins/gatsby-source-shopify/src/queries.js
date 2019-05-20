@@ -136,6 +136,7 @@ export const PRODUCTS_QUERY = `
             metafields(first: 50) {
               edges {
                 node {
+                	id
                   namespace
                   key
                   value

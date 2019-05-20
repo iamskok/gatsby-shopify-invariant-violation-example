@@ -13,6 +13,7 @@ const ProductList = () => {
               title
               handle
               metafields {
+              	id
               	namespace
               	key
               	value
