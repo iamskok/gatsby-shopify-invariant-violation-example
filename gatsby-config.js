@@ -2,6 +2,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
+const config = require('./.env.example');
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -22,8 +24,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-shopify',
       options: {
-        shopName: `${process.env.SHOPIFY_SHOP_NAME}`,
-        accessToken: `${process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN}`,
+        shopName: config.shopifyShopName,
+        accessToken: config.shopifyStorefrontAccessToken,
         verbose: true
       }
     },

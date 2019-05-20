@@ -1,8 +1,10 @@
 import { GraphQLClient } from 'graphql-request'
+import config from '../../../.env.example';
 
 async function main() {
 	// https://{apikey}:{password}@{hostname}/admin/api/{version}/{resource}.json
-  const endpoint = `https://XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX@shop-name.myshopify.com/admin/api/2019-07/graphql.json`
+  // const endpoint = `https://XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX@shop-name.myshopify.com/admin/api/2019-07/graphql.json`
+  const endpoint = `https://${config.shopifyAdminAccessToken}:${config.shopifyAdminPassword}@${config.shopifyShopName}/admin/api/2019-07/graphql.json`
 
   const graphQLClient = new GraphQLClient(endpoint)
 
